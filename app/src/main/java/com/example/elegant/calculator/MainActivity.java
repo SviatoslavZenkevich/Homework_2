@@ -8,44 +8,45 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    private Button b1;
-    private Button b2;
-    private Button b3;
-    private Button b4;
-    private Button b5;
-    private Button b6;
-    private Button b7;
-    private Button b8;
-    private Button b9;
-    private Button b0;
-    private Button b_equal;
-    private Button b_multi;
-    private Button b_divide;
-    private Button b_add;
-    private Button b_sub;
-    private Button b_clear;
-    private Button b_dot;
-    private Button b_para1;
-    private Button b_para2;
-    private TextView t1;
-    private TextView t2;
-    private final char ADDITION = '+';
-    private final char SUBTRACTION = '-';
-    private final char MULTIPLICATION = '*';
-    private final char DIVISION = '/';
-    private final char EQU = '=';
-    private final char EXTRA = '@';
-    private final char MODULUS = '%';
-    private char ACTION;
-    private double val1 = Double.NaN;
-    private double val2;
+//public class MainActivity extends AppCompatActivity {
+//    private Button b1;
+//    private Button b2;
+//    private Button b3;
+//    private Button b4;
+//    private Button b5;
+//    private Button b6;
+//    private Button b7;
+//    private Button b8;
+//    private Button b9;
+//    private Button b0;
+//    private Button b_equal;
+//    private Button b_multi;
+//    private Button b_divide;
+//    private Button b_add;
+//    private Button b_sub;
+//    private Button b_clear;
+//    private Button b_dot;
+//    private Button b_para1;
+//    private Button b_para2;
+//    private TextView t1;
+//    private TextView t2;
+//    private final char ADDITION = '+';
+//    private final char SUBTRACTION = '-';
+//    private final char MULTIPLICATION = '*';
+//    private final char DIVISION = '/';
+//    private final char EQU = '=';
+//    private final char EXTRA = '@';
+//    private final char MODULUS = '%';
+//    private char ACTION;
+//    private double val1 = Double.NaN;
+//    private double val2;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        viewSetup();
+class MainActivity : AppCompatActivity() {
+
+        override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
