@@ -40,6 +40,7 @@ import android.widget.TextView;
 //    private char ACTION;
 //    private double val1 = Double.NaN;
 //    private double val2;
+<<<<<<< HEAD
 
 class MainActivity : AppCompatActivity() {
 
@@ -48,95 +49,124 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "1");
-            }
-        });
 
-        b2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "2");
-            }
-        });
 
-        b3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "3");
-            }
-        });
+class MainActivity : AppCompatActivity() {
 
-        b4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "4");
-            }
-        });
+        override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        b5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "5");
-            }
-        });
 
-        b6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "6");
-            }
-        });
+//        b1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "1");
+//            }
+//        });
 
-        b7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "7");
-            }
-        });
+        b1.setOnClickListener { appendVal("1", false) }
 
-        b8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "8");
-            }
-        });
+//        b2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "2");
+//            }
+//        });
 
-        b9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "9");
-            }
-        });
+        b2.setOnClickListener { appendVal("2", false) }
 
-        b0.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ifErrorOnOutput();
-                exceedLength();
-                t1.setText(t1.getText().toString() + "0");
-            }
-        });
+//        b3.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "3");
+//            }
+//        });
+
+        b3.setOnClickListener { appendVal("3", false) }
+
+//        b4.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "4");
+//            }
+//        });
+
+        b4.setOnClickListener { appendVal("4", false) }
+
+//        b5.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "5");
+//            }
+//        });
+
+        b5.setOnClickListener { appendVal("5", false) }
+
+//        b6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "6");
+//            }
+//        });
+
+        b6.setOnClickListener { appendVal("6", false) }
+
+//        b7.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "7");
+//            }
+//        });
+
+        b7.setOnClickListener { appendVal("7", false) }
+
+//        b8.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "8");
+//            }
+//        });
+
+        b8.setOnClickListener { appendVal("8", false) }
+
+//        b9.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "9");
+//            }
+//        });
+
+        b9.setOnClickListener { appendVal("9", false) }
+
+//        b0.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ifErrorOnOutput();
+//                exceedLength();
+//                t1.setText(t1.getText().toString() + "0");
+//            }
+//        });
+
+        b0.setOnClickListener { appendVal("0", false) }
 
         b_dot.setOnClickListener(new View.OnClickListener() {
             @Override
